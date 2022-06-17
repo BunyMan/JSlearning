@@ -1,14 +1,3 @@
-var number = 5; // in-line commnet
-
-/* this
-is
-a 
-multi-line
-comment
-*/
-
-number = 9;
-
 /* Data Types:
 undefined, null, boolean, string, symbol, number, and object
 */
@@ -176,4 +165,59 @@ c = c + " String!";
         strLength = str.length;
         console.log("The string is " + str + " and it's lenght is: " + strLength);
         
-          
+    //Bracket Notation to Find First Character in String
+        var firstLetter = "";
+        var str = "ABCDEF";
+        var i = 0;
+        
+        firstLetter = str[0];
+        console.log("The first letter of the str is: " + firstLetter);
+    //String Immutability
+    //  var str = "Fello World";
+    //  str[0] = "H"; This would throw an error due to string immutability
+        var str = "Fello World";
+        str = "Hello World";
+        console.log("The string is now: " + str);
+    //Bracket Notation to find Nth Character in String
+        var str = "whatever";
+        var thirdLetter = str[2];
+        console.log("Thw third letter of whatever is: " + thirdLetter);
+    //Bracket Notation to Find the Last Character is String
+        var str = "blablable";
+        var lastLetter = str[str.length - 1];
+        console.log("The last letter of blablable is: " + lastLetter);
+    //Bracket Notation to Find Nth-to-Last Character in String
+        var str = "blablable";
+        var lastLetter = str[str.length - 3];
+        console.log("The third to last letter of blablable is: " + lastLetter);
+    // Word Blanks
+        function wordBlanks(noun, adjective, verb, adverb) {
+            var result = "";
+            result += "The " + adjective + " " + noun + " " + verb + " there " + adverb;
+            return result;
+        }
+        console.log(wordBlanks("dog", "big", "ran", "quicly"));
+        console.log(wordBlanks("cat", "small", "walked", "slowly"));
+    //Storing Multiple Values with Arrays
+        var array = ["Yellow", 14];
+        console.log("The array is: " + array);
+    //Acess Array Data with Indexes
+        var firstArrayElement = array[0];
+        console.log("The first element of the array is: " + firstArrayElement)
+    //Nested Arrays
+        var newArray = [["The answer", 42], ["everything", 101010]];
+    //Modify Array Data With Indexes
+        array[1] = 15;
+        console.log("Modified array is: " + array)
+    //Access Multi-Dimensional Arrays With Indexes
+        var arrayInArray = newArray[0][1];
+        console.log("The second elemnt of the first nested array is: " + arrayInArray)
+    //Manipulate Arrays With push()
+        var array = ["Hello", " World"];
+        array.push(["!"]);
+        console.log("Pushed value to array: " + array);
+        array.push(["bla", "ble", 42]);
+        console.log("Pushed more values to array: " + array);
+    //Manipulate Arrays With pop()
+        var removedFromArray = array.pop()
+        console.log("Popped array: " + array)
