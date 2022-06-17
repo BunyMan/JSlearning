@@ -198,6 +198,7 @@ c = c + " String!";
         }
         console.log(wordBlanks("dog", "big", "ran", "quicly"));
         console.log(wordBlanks("cat", "small", "walked", "slowly"));
+//ARRAYS
     //Storing Multiple Values with Arrays
         var array = ["Yellow", 14];
         console.log("The array is: " + array);
